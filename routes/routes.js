@@ -32,8 +32,7 @@ router.get('/public', async (req, res) => {
 })
 
 router.get('/private', async (req, res) => {
-    const consulta = await getEvent();
-  res.json(consulta);
+    res.send('Soy un sitio Privado')
 })
 
 
